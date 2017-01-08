@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>   
+<!DOCTYPE mapper   
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"   
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="dao.mappers.UserMapper">
+    <!-- 这里namespace必须是UserMapper接口的路径” -->
+    <insert id="insertUser" parameterType="dao.bean.user.User">
+        insert into tb_user(user_level,user_name,password) values(#{userLevel},#{userName},#{password})                                                     
+        <!-- 这里sql结尾不能加分号，否则报“ORA-00911”的错误 -->
+    </insert>
+    
+    <resultMap id="userList" type="dao.bean.user.User">
+        <id column="user_id" property="userId" />
+        <result column="user_level" property="userLevel" />
+        <result column="user_name" property="userName" />
+        <result column="create_time" property="createTime" />
+        <result column="password" property="password" />
+    </resultMap>
+    
+    <select id="getUserListByName"  resultMap="userList" parameterType="java.lang.String">
+        select * from tb_user where user_name=#{userName}
+    </select>
+    
+    <select id="getUserListById"  resultMap="userList" parameterType="int">
+        select * from tb_user where user_id=#{userId}
+    </select>
+
+    <!-- 这里的id必须和UserMapper接口中的接口方法名相同 -->
+    <select id="getUserByName" resultType="User" parameterType="java.lang.String">
+        select * from tb_user where user_name=#{userName}
+    </select>
+    
+    <!-- <select id="getUserById" resultType="User" parameterType="java.lang.String">
+        select * from tb_user where user_id=#{userId}
+    </select> -->
+</mapper>
