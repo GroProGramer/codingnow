@@ -46,15 +46,15 @@ public class LoginServlet extends HttpServlet {
 		if (type.equals("login")) {
 		   String name = request.getParameter("ope_name");
 		   String psw = request.getParameter("ope_pwd");
-		   System.out.print(name + " " + psw);
+//		   System.out.print(name + " " + psw);
 //		   User newUser = new User();
 //		   newUser.setUserName("hello");
 //		   newUser.setUserLevel(2);
 //		   newUser.setPassword("123456");
 //		   UserServiceImpl.getInstance().createUser(newUser);
 		   List<User> checkUserList = UserServiceImpl.getInstance().getUserListByName(name);
-		   System.out.print(checkUserList.get(0).toString());
-		   if(checkUserList.get(0).getPassword().equals(psw)) {
+//		   System.out.print(checkUserList.get(0).toString());
+		   if(checkUserList != null && checkUserList.get(0) != null && checkUserList.get(0).getPassword() != null && checkUserList.get(0).getPassword().equals(psw)) {
 			   response.getWriter().write("success");
 		   }else {
 			   response.getWriter().write("failed");

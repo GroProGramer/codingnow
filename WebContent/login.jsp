@@ -4,7 +4,7 @@
 <head>
 <title>代码痴狂</title>
 <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-<script src="js/login.js" type="text/javascript"></script>
+<script src="js/login.js?ver=1" type="text/javascript"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>

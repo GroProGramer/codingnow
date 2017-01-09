@@ -5,7 +5,7 @@ function login()
 	$.post(url, null, function(rs)
 	{
 		if (rs == "success")
-			window.open("/codingnow/index.html", "_self");
+			window.open("/codingnow/blog/manager/addblog.jsp", "_self");
 		elses
 			alert(rs);
 	});

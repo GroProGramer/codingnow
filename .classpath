@@ -9,9 +9,8 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="D:/Program Files (x86)/Tomcat/lib/gson-2.5.jar"/>
-	<classpathentry kind="lib" path="D:/Program Files (x86)/Tomcat/lib/servlet-api.jar" sourcepath="D:/Program Files (x86)/Tomcat/apache-tomcat-7.0.73-src.zip"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.5-bin.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mybatis-3.3.1.jar" sourcepath="D:/Program Files (x86)/eclipse-jee-luna-SR2-win32-x86_64/lbs/mybatis-3.3.1/mybatis-3.3.1-sources.jar"/>
+	<classpathentry kind="lib" path="D:/Sofeware/Tomcat 8.0/lib/servlet-api.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
