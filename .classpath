@@ -12,5 +12,6 @@
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mysql-connector-java-5.1.5-bin.jar"/>
 	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/mybatis-3.3.1.jar" sourcepath="D:/Program Files (x86)/eclipse-jee-luna-SR2-win32-x86_64/lbs/mybatis-3.3.1/mybatis-3.3.1-sources.jar"/>
 	<classpathentry kind="lib" path="D:/Sofeware/Tomcat 8.0/lib/servlet-api.jar"/>
+	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/gson-2.6.1.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

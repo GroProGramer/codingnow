@@ -9,7 +9,7 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <link href="style.css" type="text/css" rel="stylesheet"> 	
 </head>
-<body>
+<body onload="addCategory()">
 <div id="container">	
 <div id="banner">
 		<h1>博客的名字</h1>
@@ -38,11 +38,12 @@
 
 <tr>
     <td>分类: </td>
-    <td>  <select name="categoryId">
-    <option value="4" >Struts 2.x</option>
-    <option value="1" >Java SE</option>
-    <option value="2" >Java Web</option>
-    <option value="3" >Hibernate 3.X</option>
+    <td>  
+      <select name="categoryList" id="categoryList" onchange="onSelectListChange(this)">
+        <option value="4" >Struts 2.x</option>
+        <option value="1" >Java SE</option>
+        <option value="2" >Java Web</option>
+        <option value="3" >Hibernate 3.X</option>
     </select>
 </td>
 </tr>

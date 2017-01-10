@@ -38,7 +38,7 @@ CREATE TABLE tb_article(
   
 );
 
- ADD CONSTRAINT fk_category_id  FOREIGN KEY(category_id) REFERENCES tb_category(category_id);
+ ALTER TABLE tb_article ADD CONSTRAINT fk_category_id  FOREIGN KEY(category_id) REFERENCES tb_category(category_id);
 
 
 
