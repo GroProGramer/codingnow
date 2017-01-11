@@ -4,8 +4,8 @@
 <html>
 <head>
 <title>编辑博客</title>
-<script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
-<script src="js/addblog.js?ver=1" type="text/javascript"></script>
+<script src="../../js/jquery-3.1.1.min.js" type="text/javascript"></script>
+<script src="../../js/addblog.js?ver=8" type="text/javascript"></script>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <link href="style.css" type="text/css" rel="stylesheet"> 	
 </head>
@@ -39,11 +39,11 @@
 <tr>
     <td>分类: </td>
     <td>  
-      <select name="categoryList" id="categoryList" onchange="onSelectListChange(this)">
-        <option value="4" >Struts 2.x</option>
+      <select name="categoryList" id="categoryList" onchange="getCategorys(this)">
+       <!--  <option value="4" >Struts 2.x</option>
         <option value="1" >Java SE</option>
         <option value="2" >Java Web</option>
-        <option value="3" >Hibernate 3.X</option>
+        <option value="3" >Hibernate 3.X</option> -->
     </select>
 </td>
 </tr>

@@ -1,12 +1,13 @@
 function login()
 {
+	console.log("login call!");
 	var url = "/codingnow/login?type=login&ope_name=";
 	url += $("#ope_name").val() + "&ope_pwd=" + $("#ope_pwd").val();
 	$.post(url, null, function(rs)
 	{
 		if (rs == "success")
 			window.open("/codingnow/blog/manager/addblog.jsp", "_self");
-		elses
+		else
 			alert(rs);
 	});
 }
