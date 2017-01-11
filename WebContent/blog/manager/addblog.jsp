@@ -39,7 +39,7 @@
 <tr>
     <td>分类: </td>
     <td>  
-      <select name="categoryList" id="categoryList" onchange="getCategorys(this)">
+      <select name="categoryList" id="categoryList" >
        <!--  <option value="4" >Struts 2.x</option>
         <option value="1" >Java SE</option>
         <option value="2" >Java Web</option>
